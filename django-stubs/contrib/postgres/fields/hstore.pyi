@@ -4,6 +4,7 @@ from typing import (
     Dict,
     Generic,
     Iterable,
+    Literal,
     Optional,
     Tuple,
     TypeVar,
@@ -12,7 +13,6 @@ from typing import (
 )
 
 from django.db.models import Field, Transform
-from typing_extensions import Literal
 
 from .mixins import CheckFieldDefaultMixin
 

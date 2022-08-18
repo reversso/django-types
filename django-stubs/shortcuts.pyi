@@ -1,8 +1,8 @@
-import sys
 from typing import (
     Any,
     Callable,
     List,
+    Literal,
     Mapping,
     Optional,
     Protocol,
@@ -21,11 +21,6 @@ from django.http.response import (
     HttpResponsePermanentRedirect as HttpResponsePermanentRedirect,
 )
 from django.http.response import HttpResponseRedirect as HttpResponseRedirect
-
-if sys.version_info < (3, 8):
-    from typing_extensions import Literal
-else:
-    from typing import Literal
 
 def render_to_response(
     template_name: Union[str, Sequence[str]],

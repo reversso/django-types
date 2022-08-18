@@ -3,6 +3,7 @@ from typing import (
     Callable,
     Dict,
     Iterable,
+    Literal,
     Optional,
     Tuple,
     TypeVar,
@@ -11,7 +12,6 @@ from typing import (
 )
 
 from django.db.models.fields import CharField, EmailField, TextField
-from typing_extensions import Literal
 
 _Choice = Tuple[Any, Any]
 _ChoiceNamedGroup = Tuple[str, Iterable[_Choice]]

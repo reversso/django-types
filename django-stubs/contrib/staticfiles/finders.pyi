@@ -1,8 +1,17 @@
-from typing import Any, Iterable, Iterator, List, Mapping, Optional, Union, overload
+from typing import (
+    Any,
+    Iterable,
+    Iterator,
+    List,
+    Literal,
+    Mapping,
+    Optional,
+    Union,
+    overload,
+)
 
 from django.core.checks.messages import CheckMessage
 from django.core.files.storage import Storage
-from typing_extensions import Literal
 
 searched_locations: Any
 

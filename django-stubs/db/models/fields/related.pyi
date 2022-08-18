@@ -5,6 +5,7 @@ from typing import (
     Generic,
     Iterable,
     List,
+    Literal,
     Optional,
     Protocol,
     Sequence,
@@ -44,7 +45,6 @@ from django.db.models.fields.reverse_related import ManyToOneRel as ManyToOneRel
 from django.db.models.fields.reverse_related import OneToOneRel as OneToOneRel
 from django.db.models.manager import ManyToManyRelatedManager
 from django.db.models.query_utils import PathInfo, Q
-from typing_extensions import Literal
 
 class _DeleteProtocol(Protocol):
     def __call__(

@@ -4,9 +4,7 @@ import os
 import subprocess
 import tempfile
 from dataclasses import dataclass
-from typing import List, cast
-
-from typing_extensions import Literal
+from typing import List, Literal, cast
 
 _cwd = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 _bin = os.path.join(_cwd, "node_modules", ".bin", "pyright")

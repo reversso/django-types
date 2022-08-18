@@ -5,6 +5,7 @@ from typing import (
     Iterable,
     Iterator,
     List,
+    Literal,
     Mapping,
     MutableMapping,
     MutableSet,
@@ -14,8 +15,6 @@ from typing import (
     Union,
     overload,
 )
-
-from typing_extensions import Literal
 
 _K = TypeVar("_K")
 _V = TypeVar("_V")

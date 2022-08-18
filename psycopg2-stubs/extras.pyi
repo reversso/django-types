@@ -4,10 +4,12 @@ from typing import (
     Dict,
     Iterator,
     List,
+    Literal,
     Mapping,
     NamedTuple,
     Optional,
     Pattern,
+    Protocol,
     Sequence,
     Tuple,
     Union,
@@ -23,7 +25,6 @@ from psycopg2._range import Range as Range
 from psycopg2.extensions import _SQLType
 from psycopg2.extensions import connection as _connection
 from psycopg2.extensions import cursor as _cursor
-from typing_extensions import Literal, Protocol
 
 class DictCursorBase(_cursor):
     _query_executed: bool

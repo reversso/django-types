@@ -3,6 +3,7 @@ from typing import (
     Callable,
     Dict,
     Generic,
+    Literal,
     Optional,
     Sequence,
     Type,
@@ -19,7 +20,6 @@ from django.views.generic.detail import (
     SingleObjectMixin,
     SingleObjectTemplateResponseMixin,
 )
-from typing_extensions import Literal
 
 _FormT = TypeVar("_FormT", bound=BaseForm)
 

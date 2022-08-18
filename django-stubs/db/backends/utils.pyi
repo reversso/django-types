@@ -7,6 +7,7 @@ from typing import (
     Iterable,
     Iterator,
     List,
+    Literal,
     Mapping,
     Optional,
     Sequence,
@@ -19,7 +20,6 @@ from uuid import UUID
 import psycopg2
 from django.db.backends.postgresql.base import DatabaseWrapper
 from psycopg2.extensions import Column
-from typing_extensions import Literal
 
 logger: Any
 
